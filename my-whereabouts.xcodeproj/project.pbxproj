@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		417629F51A66C316009B3A14 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417629F41A66C316009B3A14 /* DetailViewController.m */; };
 		41AC40FD1A64A9B500A56C48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AC40FC1A64A9B500A56C48 /* main.m */; };
 		41AC41001A64A9B500A56C48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AC40FF1A64A9B500A56C48 /* AppDelegate.m */; };
 		41AC41031A64A9B500A56C48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AC41021A64A9B500A56C48 /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		41AC41081A64A9B500A56C48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AC41071A64A9B500A56C48 /* Images.xcassets */; };
 		41AC410B1A64A9B500A56C48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41AC41091A64A9B500A56C48 /* LaunchScreen.xib */; };
 		41AC41171A64A9B500A56C48 /* my_whereaboutsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AC41161A64A9B500A56C48 /* my_whereaboutsTests.m */; };
+		41AC41211A64ABA600A56C48 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AC41201A64ABA600A56C48 /* CoreLocation.framework */; };
+		41AC41241A64C49000A56C48 /* History.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AC41231A64C49000A56C48 /* History.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		417629F31A66C316009B3A14 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		417629F41A66C316009B3A14 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 		41AC40F71A64A9B500A56C48 /* my-whereabouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-whereabouts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AC40FB1A64A9B500A56C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AC40FC1A64A9B500A56C48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,9 @@
 		41AC41101A64A9B500A56C48 /* my-whereaboutsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "my-whereaboutsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AC41151A64A9B500A56C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AC41161A64A9B500A56C48 /* my_whereaboutsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = my_whereaboutsTests.m; sourceTree = "<group>"; };
+		41AC41201A64ABA600A56C48 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		41AC41221A64C49000A56C48 /* History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = History.h; path = ../History.h; sourceTree = "<group>"; };
+		41AC41231A64C49000A56C48 /* History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = History.m; path = ../History.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AC41211A64ABA600A56C48 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		41AC40EE1A64A9B500A56C48 = {
 			isa = PBXGroup;
 			children = (
+				41AC41201A64ABA600A56C48 /* CoreLocation.framework */,
 				41AC40F91A64A9B500A56C48 /* my-whereabouts */,
 				41AC41131A64A9B500A56C48 /* my-whereaboutsTests */,
 				41AC40F81A64A9B500A56C48 /* Products */,
@@ -83,8 +93,12 @@
 			children = (
 				41AC40FE1A64A9B500A56C48 /* AppDelegate.h */,
 				41AC40FF1A64A9B500A56C48 /* AppDelegate.m */,
+				417629F31A66C316009B3A14 /* DetailViewController.h */,
+				417629F41A66C316009B3A14 /* DetailViewController.m */,
 				41AC41011A64A9B500A56C48 /* ViewController.h */,
 				41AC41021A64A9B500A56C48 /* ViewController.m */,
+				41AC41221A64C49000A56C48 /* History.h */,
+				41AC41231A64C49000A56C48 /* History.m */,
 				41AC41041A64A9B500A56C48 /* Main.storyboard */,
 				41AC41071A64A9B500A56C48 /* Images.xcassets */,
 				41AC41091A64A9B500A56C48 /* LaunchScreen.xib */,
@@ -219,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417629F51A66C316009B3A14 /* DetailViewController.m in Sources */,
 				41AC41031A64A9B500A56C48 /* ViewController.m in Sources */,
 				41AC41001A64A9B500A56C48 /* AppDelegate.m in Sources */,
+				41AC41241A64C49000A56C48 /* History.m in Sources */,
 				41AC40FD1A64A9B500A56C48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,8 +360,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "my-whereabouts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,8 +372,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "my-whereabouts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +432,7 @@
 				41AC411C1A64A9B500A56C48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41AC411D1A64A9B500A56C48 /* Build configuration list for PBXNativeTarget "my-whereaboutsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +441,7 @@
 				41AC411F1A64A9B500A56C48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
